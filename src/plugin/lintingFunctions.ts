@@ -112,7 +112,7 @@ export function checkRadius(node, errors, radiusValues) {
         createErrorObject(
           node,
           "radius",
-          "Incorrect border radius",
+          "Border radius should be 0, 8, 12, or 16",
           node.cornerRadius
         )
       );
@@ -411,9 +411,15 @@ export function ignoreSymbols(node) {
   const symbolsToIgnore = [
     // Components to exclude (Android and iOS System)
     //Android Bottom Navigation
-    "3b7f1611a36d94c2dfd8d1bdcd016320bad1e1c5",
+    //"3b7f1611a36d94c2dfd8d1bdcd016320bad1e1c5",
+    //Android Bottom Navigation Child
+    //"4d1de8cc9050cd3f602cef5e7807a16f62c4dc01",
+    //Notification
+    "5263862e20ce7ebc6e9995cabbf37212cad43baf",
     //Button
     "4c176fb66019af2b55fcd687fa5c358c63251e44",
+    //Button Secondary Default
+    "27cde30b1d3c052f29bfe8b5eae77d47465e0e14",
     //Toggles
     "feb0d1cc3ca428c1b94bf7307a458ca122323fed"
   ];
